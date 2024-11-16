@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Таблицы users и lessons</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="buttonContainer">
+      <button onclick="showTable('usersTable')">Users</button>
+      <button onclick="showTable('lessonsTable')">Lessons</button>
+    </div>
+
+    <div class="tableContainer">
+      <!-- Таблица Users -->
+      <table id="usersTable" class="customTable">
+        <thead>
+          <tr>
+            <th>id</th>
+            <th>role</th>
+            <th>name</th>
+            <th>password</th>
+            <th>number_group</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>admin</td>
+            <td>Ivan Ivanov</td>
+            <td>123456</td>
+            <td>48</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>student</td>
+            <td>Maria Petrova</td>
+            <td>password123</td>
+            <td>48</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>student</td>
+            <td>Alexey Smirnov</td>
+            <td>qwerty</td>
+            <td>49</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>teacher</td>
+            <td>Svetlana Ivanova</td>
+            <td>teacher2021</td>
+            <td>48</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>admin</td>
+            <td>Oleg Sokolov</td>
+            <td>admin2020</td>
+            <td>49</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- Таблица Lessons -->
+      <table id="lessonsTable" class="customTable" style="display: none">
+        <thead>
+          <tr>
+            <th>id</th>
+            <th>number_group</th>
+            <th>name</th>
+            <th>info</th>
+            <th>files</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>48</td>
+            <td>Math</td>
+            <td>Introduction to Algebra</td>
+            <td>algebra_intro.pdf</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>48</td>
+            <td>History</td>
+            <td>World History Basics</td>
+            <td>history_basics.pdf</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>49</td>
+            <td>Physics</td>
+            <td>Mechanics</td>
+            <td>mechanics_notes.pdf</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>49</td>
+            <td>Chemistry</td>
+            <td>Organic Chemistry Overview</td>
+            <td>organic_chem.pdf</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>48</td>
+            <td>Programming</td>
+            <td>Introduction to Java</td>
+            <td>java_intro.pdf</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
